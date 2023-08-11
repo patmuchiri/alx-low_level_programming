@@ -4,11 +4,9 @@
 
 /**
  * assigns a random number to the variable n each time it is executed
- * Return:Always 0 (Success)
- 
- *program that tells whether a number is positive or negative
+ * Return:Always 0(Success) 
  */
-int main(void)
+int main(void) /*program that tells whether a number is positive or negative*/
 {
 	int n;
 
