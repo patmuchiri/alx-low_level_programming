@@ -3,10 +3,11 @@
 #include <stdio.h>
 
 /**
- * program will assign a random number to the variable n each time it is executed
+ * assigns a random number to the variable n each time it is executed
  * Return:Always 0 (Success)
+ 
+ *program that tells whether a number is positive or negative
  */
-
 int main(void)
 {
 	int n;
