@@ -7,11 +7,8 @@ int main(void)
 {
 	int n = 0;
 
-	while (n < 10)
-	{
+	for (n = 0; n < 10; a++)
 		printf("%d", n);
-		n++;
-	}
-	putchar('\n);
-
+	putchar('\n');
 	return (0);
+}
