@@ -24,10 +24,10 @@ int main(void)
 					{
 						putchar (',');
 						putchar (' ');
+						Return(0)
 					}
 				}
 			}
 		}
 	}
-Return(0);
 }
