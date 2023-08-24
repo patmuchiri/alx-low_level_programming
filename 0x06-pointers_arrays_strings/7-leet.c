@@ -17,24 +17,26 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		bool is_letter = false;
+		bool is_replacement = false;
 
 		for (j = 0; leet_map[j] != '\0'; j++)
 		{
 			if (str[i] == leet_map[j] || str[i] == leet_map[j] + 32)
 			{
 				str[i] = leet_replacements[j];
-				is_letter = true;
+				is_replacement = true;
 				break;
 			}
 		}
 
-		if (!is_letter)
-		{
-		j = 0;
-		}
+		i += is_replacement ? 1 : 0;
 
-		i++;
+		if (!is_replacement)
+
+		{
+			i++;
+		}
 	}
+
 	return (str);
 }
