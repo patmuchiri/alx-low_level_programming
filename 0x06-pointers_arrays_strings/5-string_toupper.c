@@ -19,7 +19,7 @@ char *string_toupper(char *str)
 			/* Convert lowercase to uppercase */
 			 /* by subtracting the difference in ASCII values */
 
-			str[i] = str[i] - ('A' - 'a');
+			str[i] = str[i] - ('a' - 'A');
 		}
 		i++;
 	}
