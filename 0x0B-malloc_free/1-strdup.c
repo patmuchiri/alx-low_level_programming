@@ -23,7 +23,7 @@ char *_strdup(char *str)
 
 	length = strlen(str);
 
-	duplicate = (char *)malloc((length) * sizeof(char));
+	duplicate = (char *)malloc((length + 1) * sizeof(char));
 
 	if (duplicate == NULL)
 	{
