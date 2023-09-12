@@ -5,7 +5,6 @@
 /**
  * print_dog - function that prints a struct dog
  * @d: struct dog to print
- * @name: second member
  */
 
 void print_dog(struct dog *d)
