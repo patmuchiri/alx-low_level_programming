@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * new_dog -  function that creates a new dog.
+ * _strlen - returns string length
  * @s: string to examine
  * Return: the length of the string
- *
  */
+
 int _strlen(char *s)
 {
 	int i;
