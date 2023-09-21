@@ -1,9 +1,11 @@
 #include "lists.h"
 #include <stdio.h>
 #include <string.h>
- 
+
 /**
  * add_node - function that adds a new node at the beginning of a list_t list.
+ * @head: Pointer to a pointer to the head of the list
+ * @str: String to be added as the data of the new node
  * Return: address of the new element, otherwise Null if it failed
  */
 
