@@ -6,12 +6,16 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
-	@echo "$(CC) $(CFLAGS)   -c -o main.o main.c"
-	@echo "$(CC) $(CFLAGS)   -c -o school.o school.c"
+	@echo "$(CC) $(CFLAGS) -c -o main.o main.c"
+	@echo "$(CC) $(CFLAGS) -c -o school.o school.c"
 	@echo "$(CC) $(OBJ) -o $(NAME)"
 
+%.o: %.c
+	@echo "$(CC) $(CFLAGS) -c -o $@ $<"
+	$(CC) $(CFLAGS) -c -o $@ $<
+
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) *~ $(NAME) $(OBJ)
 
 oclean:
 	$(RM) $(OBJ)
